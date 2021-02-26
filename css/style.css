@@ -1,0 +1,268 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align: center;
+
+    color: white;
+    padding: 15px;
+    border-radius: 11px;
+    background-color: lightseagreen;
+
+}
+.answer{
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Andika New Basic', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    background: linear-gradient(130deg , #242897,#248d9b);
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    box-shadow:0 0 5px 5px rgba(160, 160, 160, 0.602);
+}
+
+
+div{
+    border:1.5px solid rgba(128, 128, 128, 0.822);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 11px;
+}
+.companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+footer{
+    clear: both;
+    text-align: center;
+    background: linear-gradient(130deg , #242897,#248d9b);
+    padding: 20px;
+    color:white;
+    line-height:1.3;
+
+}
+.rownav{
+    overflow: hidden;
+    
+}
+pre{
+    word-break: break-all;
+}
+.rownav > li{
+    list-style: none;
+    padding: 10px;
+    margin:5px;
+    border-radius: 3px;
+    float: left;
+
+    
+
+    }
+	
+.rownav > li  a{
+color:white;
+}	     
+.pagination{
+display: block;  
+padding: 40px;
+}
+
+.pagination a{
+
+   background:  linear-gradient(130deg , #242897,#248d9b);
+   padding: 10px;
+   color: black;
+   border-radius:11px;     
+   outline: none;
+   background-size:10% ;
+   background-repeat:no-repeat ;
+   transition:  linear 1s; 
+   font-weight: bold;
+}
+.pagination a:hover{
+    color: white;
+    animation-duration: 0.5s;
+    animation-name: size;
+    background-size: 100%;
+
+ }
+ .pagination button{
+     background: green;
+     color: white;
+     padding: 10px;
+     border-radius: 11px;
+     outline: none;
+     border: none;
+     transition:  linear 0.6s; 
+
+     cursor: pointer;   
+ }
+ .pagination button:hover{
+    background:   #242897;
+}
+ @keyframes size{
+     0% { background-size: 20%;}
+    100% {background-size: 100%;} 
+    }
+
+table, th, td {
+    border: 1px solid rgb(149, 149, 149);
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    }
+thead tr{
+    background: rgba(211, 211, 211, 0.548);
+   
+}    
+tr:nth-child(2n){
+    background: rgba(211, 211, 211, 0.548);
+}    
+.example{
+    background: black;
+    color: white;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 3px rgba(211, 211, 211, 0.616);
+}
+.example button{
+    opacity: 0.8;
+}
+.string{
+    color: red;
+}
+.number{
+    color: green;
+}
+.comment{
+    color: gray;
+}
+.function{
+    color: pink;
+}
+.keyword{
+    color: yellow;
+}
+aside{
+    float: left;
+    width: 25%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 11px;
+    margin-top: 20px;
+    box-shadow: 0 0 3px 3px lightgray;
+    background: rgba(240, 240, 240, 0.65);
+
+}
+
+aside h1{
+    padding: 10px;
+}
+aside ul{
+    padding: 0;
+}
+aside li {
+    padding: 10px;
+    min-width: 100%;
+
+
+}
+aside li,footer li{
+    list-style: none;
+}
+aside li a{
+    color: rgb(34, 34, 34);
+}
+aside li a:hover{
+    color: red;
+}
+main{
+    float: left;
+    margin-top: 20px;
+    width: 70%;
+    padding: 20px;
+    border-radius: 11px;
+    box-shadow: 0 0 3px 3px lightgray;
+    margin-bottom: 50px;
+
+
+}
+@media screen and (max-width:640px){
+    .rownav > li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    clear: both;
+    width: 100%;
+    margin:5px;
+
+    
+    } 
+
+   aside{
+       clear: both;
+       width: 96%;
+       margin: 0;
+       margin-left: 2%;
+       margin-top: 20px;
+
+    }
+    main{
+        clear: both;
+        width: 96%;
+        margin-left: 2%;
+     
+    }
+    header{
+        flex-direction: column;
+    }
+   
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: linear-gradient(130deg , #242897,#248d9b);
+
+}
+header a:hover
+{
+    padding: 10px;
+    border-radius: 11px;
+    box-shadow: 0 0 3px 3px lightblue;
+}
+h1:not(aside h1){
+    color: white;
+    background: linear-gradient(130deg , #242897,#248d9b);
+    padding: 5px;
+    border-radius: 11px;
+
+}

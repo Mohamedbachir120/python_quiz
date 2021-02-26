@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+
+<link rel="icon" href="../img/python.png" />
+
+    <title>Cours 3</title>
+</head>
+<body>
+    <header class="rownav_parent">
+        <figure class="logo">
+            <img src="../img/python.png" alt="python logo" width="50" height="50">
+            
+        </figure>
+        <ul class="rownav">
+          <li><strong><a href="index.html">Acceuil</a></strong></li>
+          <li><strong><a href="#Biographie">Contact</a></strong></li>	
+          <li><strong><a href="#Informationsimportantes">Sommaire</a></strong></li>
+          <li><strong><a href="quiz.html">Quiz</a></strong></li>
+         
+              
+        </ul>
+    </header>   
+    
+    <aside>
+        <h2>Sommaire</h2>
+        <ul>
+            <li><a href="index.html#intro">Introduction</a></li>
+            <li><a href="cours1.html#hello">0. Hello world</a></li>
+            <li><a href="cours1.html#vars">1. Un monde de variable</a></li>
+            <li><a href="cours1.html#clavier">2. L'entrée du clavier</a></li>
+            <li><a href="cours1.html#conditions">3. Les conditions</a></li>
+            <li><a href="cours2.html#boucles">4. Les boucles </a></li>
+            <li><a href="cours2.html#listes">5. Les listes</a></li>
+            <li><a href="cours2.html#fonctions">6. Les procédures et  les fonctions</a></li>
+            <li><a href="cours2.html#chaines">7. Les chaînes de caractéres</a></li>
+            <li><a href="cours3.html#dict">8. Les dictionnaires </a></li>
+            <li><a href="cours3.html#exceptions">9. Les exceptions </a></li>
+            <li><a href="cours3.html#fichiers">10. Gestion des fichiers </a></li>
+            
+        </ul>
+    </aside>
+
+    <main>
+        <div>
+            <h1 id="dict">8. Les dictionnaires</h1>
+            <p>
+                Un dictionnaire en python est une sorte de liste mais au lieu d'utiliser des index , 
+                on utilise des clés alphanumériques, on les appelles aussi les tableaux associatifs.
+            </p>
+            <h2>Example 8.1</h2>
+            <div class="example">
+                <span class="comment">#la déclaration d'un dictionnaire se fait comme suit</span>
+                <br><br>
+                a = <span class="keyword">dict ()</span>
+            </div>
+            <p>
+                Pour ajouter des valeurs à un dictionnaire il faut indiquer une clé ainsi qu'une valeur:
+            </p>
+            <h2>Example 8.2</h2>
+            <div class="example">
+                <span class="comment">#l'ajout de l'element date de naissance</span>
+                <br><br>
+                a[<span class="string"> "date de naissance" </span>] = <span class="string">"1999"</span>
+
+            </div>
+            <h2>Example 8.3</h2>
+            Il est possible de supprimer une entrée en indiquant sa clé
+            <div class="example">
+                <span class="comment">#la suppression de l'element date de naissance</span>
+                <br><br>
+             <span class="keyword">del </span> &nbsp;  a [<span class="string"> "date de naissance" </span>] 
+
+            </div>
+
+
+
+        </div>
+        <div>
+            <h1 id="exceptions">9. Les exceptions </h1>
+            <p>
+                En python, une exception est une instance d'une classe héritée de BaseException. Dans un bloc try, la clause except traite non seulement la classe d'exception qu'elle mentionne, mais aussi toutes les classes dérivées de cette classe (contrairement à ses classes mères). Deux classes qui ne sont pas liées par héritage ne sont jamais équivalentes, même si elles ont le même nom.
+                <br>
+                En général les exceptions sont utilisé pour la gestion des erreurs .
+             </p>
+             <h2>Example 9</h2>
+             <div class="example">
+                 <span class="comment">#dans cette example on essaie de diviser par 0</span> <br><br>
+                 <span class="keyword">try :</span> <br><br>
+                   &nbsp; &nbsp; print( 10 / 0 ) <br><br>
+                 <span class="keyword">catch : </span> <br><br>
+                 &nbsp; &nbsp;  print("vous pouvez pas déviser par 0")   
+                  
+             </div>
+             <p>
+            Une exception sera levée avec le message Suivant <span style="color:red"> "ZeroDivisionError: division by zero "</span>      
+             </p>
+        </div>
+        <div>
+            <h1 id="fichiers">10. Gestion des fichiers</h1>
+            <p>
+                La gestion des fichiers est une partie indispensable dans chaque langage de programmation ,pour cela python 
+                propose de nombreuse fonctions et méthodes pour la gestion des fichiers.
+
+            </p>
+            <h2>Example 10.1</h2>
+            <div class="example">
+
+               <span class="comment">  #ouverture d'un fichier en mode lecture</span> <br><br>
+                fichier = <span class="function">open </span> ("data.txt", "r") <br><br>
+                <span class="comment">#lecture du contenu du fichier </span> <br><br>
+               <span class="function">print</span>  (fichier.read())
+
+            </div>
+           <h2>Example 10.2</h2>
+            <div class="example">
+                <span class="comment">  #ouverture d'un fichier en mode écriture</span> <br><br>
+                fichier = <span class="function">open </span> ("data.txt", "w") <br><br>
+                <span class="comment">#écriture sur le  fichier </span> <br><br>
+                fichier.write(<span class="string">"hello world" </span>)
+
+            </div>
+        </div>
+        <div>
+            Nous arrivons à la fin de cette formation, On espére  que ce cours a été utilies pour. <br>
+             vous vous êtes sur le point 
+            de devenir un &#8220; pythoniste    	 &#8221; pour compléter votre formation rendez-vous vers
+            la documentation <a href="https://docs.python.org/3/" target="_blank">officielle de python  </a> 	
+        </div>
+
+        <span class="pagination">
+            <a href="cours2.html">&lt; &lt; précédent</a>
+    
+            <a href="quiz.html">Quiz </a>
+        </span>
+    </main>
+    <footer>
+        <h3> CONTACT </h3>
+           <ul>
+    
+          <li> Nom : HADJADJI </li> 
+          <li>Prénom : Mohamed Bachir</li>  
+      
+          <li> email: mohamedbhadjadji@gmail.com</li> 
+          </ul> 
+           
+    </footer>
+    
+</body>
+</html>

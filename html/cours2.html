@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours 2</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+<link rel="icon" href="../img/python.png" />
+
+</head>
+<body>
+    <header class="rownav_parent">
+        <figure class="logo">
+            <img src="../img/python.png" alt="python logo" width="50" height="50">
+            
+        </figure>
+        <ul class="rownav">
+          <li><strong><a href="#Introduction">Acceuil</a></strong></li>
+          <li><strong><a href="#Biographie">Contact</a></strong></li>	
+          <li><strong><a href="#Informationsimportantes">Sommaire</a></strong></li>
+          <li><strong><a href="quiz.html">Quiz</a></strong></li>
+         
+              
+        </ul>
+    </header>  
+    <aside>
+        <h2>Sommaire</h2>
+        <ul>
+            <li><a href="index.html#intro">Introduction</a></li>
+            <li><a href="cours1.html#hello">0. Hello world</a></li>
+            <li><a href="cours1.html#vars">1. Un monde de variable</a></li>
+            <li><a href="cours1.html#clavier">2. L'entrée du clavier</a></li>
+            <li><a href="cours1.html#conditions">3. Les conditions</a></li>
+            <li><a href="cours2.html#boucles">4. Les boucles </a></li>
+            <li><a href="cours2.html#listes">5. Les listes</a></li>
+            <li><a href="cours2.html#fonctions">6. Les procédures et  les fonctions</a></li>
+            <li><a href="cours2.html#chaines">7. Les chaînes de caractéres</a></li>
+            <li><a href="cours3.html#dict">8. Les dictionnaires </a></li>
+            <li><a href="cours3.html#exceptions">9. Les exceptions </a></li>
+            <li><a href="cours3.html#fichiers">10. Gestion des fichiers </a></li>
+            
+        </ul>
+    </aside>
+
+
+    <main>
+
+    <div>
+
+    <h1 id="boucles">4. Les boucles</h1>
+    <p>
+Une boucle ( ou loop ) vous permet de répéter à l'infini des instructions selon vos besoins.
+
+Le boucle while
+En anglais " while " signifie "Tant que". <br> Pour créer une boucle , il faut donc utiliser ce mot clé suivi d'une indication qui dit quand la boucle s'arrête.
+
+Un exemple sera plus parlant:
+
+On désire écrire 100 fois cette phrase:
+
+" Je ne dois pas poser une question sans lever la main "
+
+Ecrire à la main prend beaucoup de temps et beaucoup de temps x 100 c'est vraiment beaucoup de temps,
+ et peu fiable, même pour les chanceux qui connaissent le copier-coller. <br>Et un bon programmeur est toujours un peu fainéant perfectionniste,
+ il cherchera la manière la plus élégante de ne pas répéter du code.
+    </p>
+<h2>Exemple 4.1:</h2>
+<p>
+    boucle while
+</p>
+<div class="example">
+<span class="comment">#initialisation de la variable i à 100</span>
+<br><br>
+i = 100
+<br><br>
+<span class="keyword">while</span>(i>0):<br><br>
+
+    <span class="comment">#affichage du message 100 fois </span> <br><br>
+    
+    print(" ma phrase ")
+    <br><br>
+    <span class="comment">décrémentation de la valeur de i</span>    
+    <br><br>
+    i-=1
+
+</div>
+<h2>Exemple 4.1:</h2>
+<p>
+    boucle for
+</p>
+<div class="example">
+<span class="comment">#initialisation de la variable i à 100</span> <br><br>
+
+i = 0 <br><br>
+
+<span class="keyword">for</span> i <span class="keyword">in rage </span>(0,100)  : <br><br>
+
+    <span class="comment">#affichage du message 100 fois </span> <br><br>
+    
+    print(" ma phrase ")
+    
+
+</div>
+</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+<div>
+<h1 id="listes">5. Les listes</h1>
+    <p>
+        Supposons qu'on  a plusieurs valeurs de même types a stockées, alors ça serait fatiguant de déclarer une variable 
+        pour chaque valeur. <br>
+        La solution est d'utliser une structure de données appelé liste .
+        la déclaration est trés simple il suffit juste initialiser la variable avec deux crochets [] 
+    </p>
+
+        <h2>Example 5.1:</h2>
+<div class="example">
+    <span class="comment">#délaration de la liste </span> <br><br>
+
+    ma_liste= []
+</div>
+
+        pour ajouter des élément à la fin de la liste on utilise la méthode   append  :
+        <h2>Example 5.2:</h2>
+
+<div class="example">
+
+<span class="comment">#ajout de la valeur mohamed </span> <br><br>
+
+ma_liste.<span class="function">append</span>( <span class="string">'mohamed'</span> ) <br><br>
+
+<span class="comment">#ajout de la valeur mohamed </span> <br><br>
+
+ma_liste.<span class="function">append</span>( <span class="string">'djamel'</span> ) <br><br>
+
+<span class="function">print</span>(maliste) <br><br>
+
+<span class="comment">#la console va afficher
+ ['mohamed','djamel']</span>
+
+</div>
+        
+    Pour supprimer un élément avec sa valeur on utilise la méthode remove  :
+    <h2>Example 5.3:</h2>
+    <div class="example">
+<span class="comment">#suppression de l'élément 
+ayant la valeur mohamed</span> <br><br>
+
+ma_liste.<span class="function">remove</span>( <span class="string">'mohamed'</span>) <br><br>
+
+<span class="comment">#la liste deviens: ['djamel']</span>
+    </div>
+    
+</div>
+<div>
+
+    <h1 id="fonctions">6. Les procédures et  les fonctions </h1>
+        Une fonction désigne en programmation un « sous-programme » permettant d'effectuer des opérations répétitives. <br>
+     Au lieu d'écrire le code complet autant de fois que nécessaire, on crée une fonction que l'on appellera pour l'exécuter, ce qui peut aussi alléger le code, le rendre plus lisible. 
+    on déclare les fonction en python grâce au mot clé  def .
+    <h2>Example 6</h2>
+    <div class="example">
+<span class="comment">#Ceci est une fonction qui calcul 
+l'addition de deux nombres</span> <br><br>
+
+<span class="keyword">def</span> addition(a,b):  <br><br>
+
+    <span class="function">return</span>  a + b
+    </div>
+    
+</div>  
+    
+    
+    <div>
+
+    <h1 id="chaines" >7. Les chaînes de caractéres</h1>
+    Nous avons précisé précédement les variables type de chaînes de caractéres , ces variables posséde un ensemble de méthode 
+    prédéfinie .
+    
+    <h2>Example 7</h2>
+    <div class="example">
+<span class="comment">#la fonction len retourne la longueur
+d'une chaîne de cractére dans notre cas len = 6</span> <br><br>
+
+<span class="function">print(len(</span><span class="string">"chaine"</span>)) <br><br>
+
+<span class="comment">#la fonction capitalize sert à 
+convertir le premier caractére en majiscules</span> <br><br>
+
+<span class="function">capitalize</span>(<span class="string">"chaine"</span>) <br><br>
+
+
+<span class="comment">#la fonction index() retourne l'index de la premiére 
+sous chaine rencontré dans notre cas elle retourne 0 </span> <br><br>
+
+"chaine".<span class="function">index</span>(<span class="string">"ch"</span>) <br><br>
+
+
+</div>
+</div>
+    
+    <span class="pagination">
+
+        <a href="cours1.html">&lt; &lt; précédent</a>
+        <a href="cours3.html">suivant &gt; &gt;</a>
+
+    </span>
+</main>
+<footer>
+    <h3> CONTACT </h3>
+       <ul>
+
+      <li> Nom : HADJADJI </li> 
+      <li>Prénom : Mohamed Bachir</li>  
+  
+      <li> email: mohamedbhadjadji@gmail.com</li> 
+      </ul> 
+       
+    </footer>
+
+</body>
+
+</html>

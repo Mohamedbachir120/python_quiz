@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+
+<link rel="icon" href="../img/python.png" />
+
+<script src="../js/script.js"></script>
+
+</head>
+<body>
+    <header class="rownav_parent">
+        <figure class="logo">
+            <img src="../img/python.png" alt="python logo" width="50" height="50">
+            
+        </figure>
+        <ul class="rownav">
+          <li><strong><a href="index.html">Acceuil</a></strong></li>
+          <li><strong><a href="#Biographie">Contact</a></strong></li>	
+          <li><strong><a href="#Informationsimportantes">Sommaire</a></strong></li>
+          <li><strong><a href="quiz.html">Quiz</a></strong></li>
+         
+              
+        </ul>
+    </header>   
+    
+    <aside>
+        <h2>Sommaire</h2>
+        <ul>
+            <li><a href="index.html#intro">Introduction</a></li>
+            <li><a href="cours1.html#hello">0. Hello world</a></li>
+            <li><a href="cours1.html#vars">1. Un monde de variable</a></li>
+            <li><a href="cours1.html#clavier">2. L'entrée du clavier</a></li>
+            <li><a href="cours1.html#conditions">3. Les conditions</a></li>
+            <li><a href="cours2.html#boucles">4. Les boucles </a></li>
+            <li><a href="cours2.html#listes">5. Les listes</a></li>
+            <li><a href="cours2.html#fonctions">6. Les procédures et  les fonctions</a></li>
+            <li><a href="cours2.html#chaines">7. Les chaînes de caractéres</a></li>
+            <li><a href="cours3.html#dict">8. Les dictionnaires </a></li>
+            <li><a href="cours3.html#exceptions">9. Les exceptions </a></li>
+            <li><a href="cours3.html#fichiers">10. Gestion des fichiers </a></li>
+            
+        </ul>
+    </aside>
+
+    <main>
+        <h1 class="title">Le Quiz </h1>
+        <span id="rapport"></span>
+        <div class="question">
+            <p>1. Quelle est  l'instruction correcte pour afficher "hello world" ?</p>
+            <input type="radio" id="printf" name="question0" value="printf">
+            <label for="printf">printf ( "hello world" ) </label><br>
+            <input type="radio" id="sprint" name="question0" value="sprint">
+            <label for="sprint">sprint ( "hello world " )</label><br>
+            <input type="radio" id="print" name="question0" value="print">
+            <label for="print">print ( "hello world" ) </label>
+        </div>
+        <div class="question">
+            <p>2. Quelle le type de la variable a = 10  ?</p>
+            <input type="radio" id="int" name="question1" value="int">
+            <label for="int">int</label><br>
+            <input type="radio" id="string" name="question1" value="string">
+            <label for="string">string </label><br>
+            <input type="radio" id="float" name="question1" value="float">
+            <label for="float">float</label>
+
+        </div>
+       
+        <div class="question">
+            <p>3. Quelle est l'instruction correcte pour récupérer une valeur saisie par l'utilisateur  ?</p>
+            <input type="radio" id="input" name="question2" value="input">
+            <label for="input">age = input ( "donner votre age" ) </label><br>
+            <input type="radio" id="lire" name="question2" value="lire">
+            <label for="lire">age = lire ( "donner votre age " ) </label><br>
+            <input type="radio" id="inputs" name="question2" value="inputs">
+            <label for="inputs">age = input ( donner votre age )</label>
+
+        </div>
+        <div class="question">
+            <p>4. Quelle est l'instruction correcte pour vérifier que l'age est différent de 15  ?</p>
+            <input type="radio" id="sdiff" name="question3" value="sdiff">
+            <label for="sdiff">age  &lt; &gt; 15 </label><br>
+            <input type="radio" id="equal" name="question3" value="equal">
+            <label for="equal">age == 15 </label><br>
+            <input type="radio" id="diff" name="question3" value="diff">
+            <label for="diff">age != 15 </label>
+
+        </div>
+        <div class="question">
+            <p>5. Quelle est le mot clé manquant pour afficher bonjour 100 fois  ?</p>
+            i=100<br><br>
+            <span class="answer" id="question4" contenteditable="true"> </span>(i &lt; 100): <br><br>
+                &nbsp;&nbsp; print("bonjour")<br><br>
+                &nbsp;&nbsp; i -= 1
+
+            
+        </div>
+        <div class="question">
+        <p>6. Quelle est le mot clé manquant pour ajouter une valeur à la liste  ?</p>
+            liste = []<br><br>
+            liste.<span class="answer" id="question5" contenteditable="true"> </span> (" valeur "): <br><br>
+             
+        </div>
+        <div class="question">
+            <p>7. Quelle est le mot clé manquant pour supprimer une valeur de la liste  ?</p>
+                liste = []<br><br>
+                liste.<span class="answer" id="question6" contenteditable="true"> </span> (" valeur "): <br><br>
+                 
+        </div>
+        <div class="question">
+            <p>8. Quelle est le mot clé manquant pour déclarer une fonction d'addition   ?</p>
+                <span class="answer" id="question7" contenteditable="true"> </span> addition ( a , b ): <br><br>
+                &nbsp;&nbsp;return a + b
+           
+        </div>
+        <div class="question">
+            <p>9. Quelle est le mot clé manquant afficher la taille de la chaîne de caractéres suivantes   ?</p>
+                print( <span class="answer" id="question8" contenteditable="true"> </span> (" salut " )) <br><br>
+           
+        </div>
+        <div class="question">
+            <p>10. Quelle est le mot clé manquant pour Convertir le premier caractéres en majiscules   ?</p>
+                chaine = <span class="answer" id="question9" contenteditable="true"> </span> ( chaine ) <br><br>
+              
+           
+        </div>
+        <div class="question">
+            <p>11. Quelle est le mot clé manquant pour déclarer un dictionnaire    ?</p>
+                a = <span class="answer" id="question10" contenteditable="true"> </span> &nbsp; () <br><br>
+            
+        </div>
+        <div class="question">
+            <p>12. Quelle est le mot clé manquant pour supprimer une valeur d'un dictionnaire    ?</p>
+                 <span class="answer" id="question11" contenteditable="true"> </span> &nbsp;a ["clé"] <br><br>
+            
+        </div>
+        <div class="question">
+            <p>13. Quelle est le mot clé utilisé pour vérifier s'il y a en exception     ?</p>
+                 <span class="answer" id="question12" contenteditable="true"></span>: <br><br>
+                  
+            
+        </div>
+        <div class="question">
+            <p>14. Quelle est le mot clé manquant pour ouvrir un fichier en mode lecture    ?</p>
+               fichier = open ("fich.txt","<span class="answer" id="question13" contenteditable="true"></span>")  <br><br>
+            
+        </div>
+        <div class="question">
+            <p>15. Quelle est le mot clé manquant pour ouvrir un fichier en mode écriture    ?</p>
+            fichier = open ("fich.txt","<span class="answer" id="question14" contenteditable="true"></span>")  <br><br>
+            
+        </div>
+       
+       
+        <span class="pagination">
+            <button id="evaluer" onclick="evaluer()"> &Sqrt; Valider</button>
+        </span>
+
+
+    </main>
+    
+    <footer>
+        <h3> CONTACT </h3>
+           <ul>
+    
+          <li> Nom : HADJADJI </li> 
+          <li>Prénom : Mohamed Bachir</li>  
+      
+          <li> email: mohamedbhadjadji@gmail.com</li> 
+          </ul> 
+           
+    </footer>
+    
+</body>
+</html>

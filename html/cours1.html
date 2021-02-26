@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiation Python</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+<link rel="icon" href="../img/python.png" />
+
+
+</head>
+<body>
+    <header class="rownav_parent">
+        <figure class="logo">
+            <img src="../img/python.png" alt="python logo" width="50" height="50">
+            
+        </figure>
+        <ul class="rownav">
+          <li><strong><a href="#Introduction">Acceuil</a></strong></li>
+          <li><strong><a href="#Biographie">Contact</a></strong></li>	
+          <li><strong><a href="#Informationsimportantes">Sommaire</a></strong></li>
+          <li><strong><a href="quiz.html">Quiz</a></strong></li>
+         
+              
+        </ul>
+    </header>   
+    
+    <aside>
+        <h2>Sommaire</h2>
+        <ul>
+            <li><a href="index.html#intro">Introduction</a></li>
+            <li><a href="cours1.html#hello">0. Hello world</a></li>
+            <li><a href="cours1.html#vars">1. Un monde de variable</a></li>
+            <li><a href="cours1.html#clavier">2. L'entrée du clavier</a></li>
+            <li><a href="cours1.html#conditions">3. Les conditions</a></li>
+            <li><a href="cours2.html#boucles">4. Les boucles </a></li>
+            <li><a href="cours2.html#listes">5. Les listes</a></li>
+            <li><a href="cours2.html#fonctions">6. Les procédures et  les fonctions</a></li>
+            <li><a href="cours2.html#chaines">7. Les chaînes de caractéres</a></li>
+            <li><a href="cours3.html#dict">8. Les dictionnaires </a></li>
+            <li><a href="cours3.html#exceptions">9. Les exceptions </a></li>
+            <li><a href="cours3.html#fichiers">10. Gestion des fichiers </a></li>
+            
+        </ul>
+    </aside>
+<main>
+<div>
+
+        <h1 id="hello">0. Hello world</h1>
+        <p>
+            Si vous avez déja fait de la programmation dans un autre langage alors que vous avez déja vu cette fameuse expression  Hello World , 
+             Bonjour tout le monde en français, dans cette étape on affiche un petit message à l'écrant bonjour tout le monde grace à la fonction 
+            print() 
+        </p>
+        <h2>Example 0</h2>
+        <div class="example">
+<span class="comment">#affichage du message hello world</span>   
+<br><br>
+    
+<span class="function">print</span>(<span class="string">"Hello world"</span>)
+       </div>
+     <h1 id="vars">1. Un monde de variables </h1>  
+     
+       <p>
+
+       Le but d'un programme est de faire quelque chose avec des données ou, 
+      en d'autres termes, avec les choses que vous mettez dans votre programme. 
+      Souvent, votre programme utilisera une ou plusieurs variables pour manipuler les données,ces derniéres sont caracrérisé en plusieurs types,
+      selon la nature de l'information a stocké s'il s'agit d'un nom de personne, prénom , ect il est préférable d'utiliser une variable de
+      type chaine de caractéres (string),s'il s'agit de l'age d'une personne année de naissance , il est préférable d'utiliser un nombre naturel(int) ,
+      s'il s'agit de la moyenne d'un ensemble de valeurs alors on doit utiliser une valeur réelle (float) .
+    </p>
+
+      <h2>Exemple 1</h2>
+      <div class="example">
+                                                                    
+<span class="comment">#déclaration d'une variable de type string</span> <br><br>
+
+nom = <span class="string"> "mohamed"</span>  <br><br>
+
+<span class="comment">#déclaration d'une variable de type int</span>  <br><br>
+
+age = <span class="number">21</span> <br><br>
+
+<span class="comment">#déclaration d'une variable de type float</span> <br><br>
+
+moyenne =<span class="number"> 10.25</span>  
+ 
+     </div>
+</div> 
+
+
+
+
+
+   <div>
+
+    <h1 id="clavier">2. L'entrée du clavier</h1>
+    <p>
+
+    Les développeurs ont souvent besoin d'interagir avec les utilisateurs, soit pour obtenir des données,
+     soit pour fournir une sorte de résultat. La plupart des programmes utilisent aujourd'hui une boîte de dialogue pour demander à l'utilisateur de fournir un certain type d'entrée.
+     Alors que Python nous fournit la fonction input pour lire les entrées du clavier.
+        </p>
+
+     <h2>Example 2</h2>
+     <div class="example">
+<span class="comment">#lecture d'une valuer saisie par l'utilisateur</span><br><br>
+
+age = <span class="function">input(<span class="string">"donner votre age"</span>)</span>   
+    </div>
+     <p>
+         Note: le type de la variable lu par l'entrée du clavier est String 
+     </p>
+    </div>
+      
+
+
+
+
+
+
+    <div>
+
+   <h1 id="conditions">3. Les conditions</h1>
+
+   Cette notion est l'une des plus importante en programmation. L'idée est de dire que si telle variable a telle valeur alors faire cela sinon cela.
+   <h2>Example 3.1</h2>
+   <p>if - else  
+       <br>
+       consiste à vérifier si une condition alors action sinon une autre action
+   </p>
+   <div class="example">
+<span class="comment">#vérification de l'age de l'utilisateur </span>   <br><br>
+
+<span class="keyword">if</span> ( age > 18 ):<br><br>
+
+    print(<span class="string">"vous êtes majeur"</span>)<br><br>
+
+<span class="keyword">else</span>:<br><br>
+
+    print(<span class="string">"vous êtes mineur"</span> )
+   </div>
+<h2>Example 3.2</h2>
+<p>if - elif - else
+<br>
+<br>
+consiste à vérifier si une condition alors action sinon si une autre condition alors action sinon une autre action 
+
+</p>
+<div class="example">
+<span class="comment">#vérification de l'age de l'utilisateur </span>   <br><br>
+
+<span class="keyword">if</span> ( age > 18 ): <br><br>
+
+&nbsp; &nbsp;print(<span class="string">"vous êtes majeur"</span>) <br><br>
+
+<span class="keyword">elif </span> ( age &lt; 10): <br><br>
+ 
+&nbsp; &nbsp;print(<span class="string">"vous êtes gamin"</span> ) <br><br>
+
+<span class="keyword">else </span>: <br><br>
+
+&nbsp; &nbsp;print(<span class="string">"vous êtes mineur"</span>)
+
+
+
+</div>
+
+   <div>
+    <table>
+        <caption> Opérateur de comparaison </caption>
+        
+        <thead>
+            <tr>
+            <th>Opérateur</th>
+            <th>Signification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> == </td>
+                <td> égal à</td>
+            </tr>
+            <tr>
+                <td> != </td>
+                <td> différent de  </td>
+            </tr>
+            <tr>
+                <td> &gt; </td>
+                <td> strictement supérieur à </td>
+            </tr>
+            <tr>
+                <td>&gt;= </td>
+                <td> supérieur ou égal à </td>
+            </tr>
+            <tr>
+                <td>&lt; </td>
+                <td>  strictement inférieur à </td>
+            </tr>
+            <tr>
+                <td>&lt;= </td>
+                <td>  inférieur ou égal à </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+    <span class="pagination">
+        <a href="index.html">&lt; &lt; précédent</a>
+
+        <a href="cours2.html">Suivant >> </a>
+    </span>
+</main>
+<footer>
+    <h3> CONTACT </h3>
+       <ul>
+
+      <li> Nom : HADJADJI </li> 
+      <li>Prénom : Mohamed Bachir</li>  
+  
+      <li> email: mohamedbhadjadji@gmail.com</li> 
+      </ul> 
+       
+</footer>
+
+    
+    
+    
+</body>
+
+</html>
